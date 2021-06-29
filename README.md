@@ -20,3 +20,6 @@ and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/dxf](https://hexdocs.pm/dxf).
 
 To execute this program, type "Dxf.main" in Iex.
+
+"Dxf.map" to switch map style.
+"Dxf.json" to switch json style.

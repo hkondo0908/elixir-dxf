@@ -62,4 +62,19 @@ defmodule Dxf do
     IO.inspect(map,label: "map")
     Enum.each(json,&IO.puts(&1.json))
   end
+
+  def map do
+    filename = "cube.gts"
+    map = read_dxf(filename)
+    |> set_map()
+    IO.inspect(map,label: "map")
+  end
+
+  def json do
+    filename = "cube.gts"
+    json = read_dxf(filename)
+    |> make_json()
+
+    Enum.each(json,&IO.puts(&1.json))
+  end
 end
